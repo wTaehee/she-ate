@@ -141,6 +141,11 @@ font-weight: 525;
     cursor: pointer; /* Change cursor on hover */
 }
 
+.full-viewport-height {
+    height: 100vh;
+  }
+
+
 /* Hover effect */
 a:hover {
     cursor: grab;
