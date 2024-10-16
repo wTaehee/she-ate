@@ -77,24 +77,24 @@ body {
 
 .title {
     position: absolute; 
-    top: 4.5vh; /* Start from the top of the screen */
+    top: -6%; /* Start from the top of the screen */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center adjustment */
     z-index: 30; /* Ensure it's above everything */
     text-align: center;
     font-family: "rafaella-shadow", sans-serif;
-font-weight: 600;
-    font-size: 12em;
-    line-height: 0.9; /* Adjust this value to reduce the space between lines */
-    height: 100vh; /* Make the title cover the full height of the viewport */
-    display: flex; /* Use flexbox for centering */
-    padding: 80px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+font-weight: 525;
+    font-size: 22em;
+    line-height: 0.89; /* Adjust this value to reduce the space between lines */
+   
+   
+    padding: 100px;
+   
+   
     background: -webkit-radial-gradient( white, #75f70b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    overflow: hidden; /* Hide any overflow */
+   
     filter: drop-shadow(0 6mm 4mm rgb(84, 83, 84)) ;
   
 }
@@ -115,6 +115,7 @@ font-weight: 600;
     position: relative;
     z-index: 3;
     max-width: 18%;
+    padding:30px;
     margin: 20px auto;
     display: block;
 }
@@ -137,19 +138,19 @@ a:hover {
 
 /* Mouth stays directly above the head and covers it */
 .mouth {
-    width:90%;
+    width:95%;
     bottom: 45vh; /* Positioned slightly above table */
     
 }
 .food {
 
-    max-width: 25%;
+    max-width: 32%;
 
 }
 
 /* Head stays behind mouth but above the table */
 .head {
-    width:90%;
+    width:95%;
     bottom: 45vh; /* Positioned just below mouth but still aligned */
    
 }
@@ -165,11 +166,12 @@ a:hover {
 
 @media only screen and (max-width: 1080px) {
 .title {
-    display: block; /* Change to block for paragraph form */
-    font-size: 5em; /* Adjust font size for smaller screens */
-    line-height: 1.2; /* Set a comfortable line height for readability */
+    top: -18vh; 
+    position: fixed;
+    font-size: 6em; /* Adjust font size for smaller screens */
+    line-height: .9; /* Set a comfortable line height for readability */
     height: auto; /* Allow height to adjust based on content */
-    padding: 20px; /* Add some padding for aesthetics */
-    top: -2%; 
+    padding: 80px; /* Add some padding for aesthetics */
+    
 }
 }
