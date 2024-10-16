@@ -161,6 +161,7 @@ a:hover {
     text-align: center; /* Center-align the text */
     margin-top: 100px; /* Adds some space between the last content and the note */
     font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: 450;
     line-height: 1;
     color: #feddfb;
     filter: drop-shadow(0 6mm 4mm rgb(84, 83, 84)) ;
