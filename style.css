@@ -94,7 +94,6 @@ font-weight: 525;
     background: -webkit-radial-gradient( white, #75f70b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   
     filter: drop-shadow(0 6mm 4mm rgb(84, 83, 84)) ;
   
 }
@@ -153,7 +152,18 @@ a:hover {
     height: 700px;
 }
 
-
+.note {
+    font-family: "rafaella-shadow", sans-serif;
+    z-index: 34;
+    position: relative; /* Keeps it in the normal document flow */
+    bottom: 10vh; /* Ensure it stays at the bottom of the content */
+    width: 100%; /* Stretch across the page width */
+    text-align: center; /* Center-align the text */
+    margin-top: 100px; /* Adds some space between the last content and the note */
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #feddfb;
+    filter: drop-shadow(0 6mm 4mm rgb(84, 83, 84)) ;
+}
 
 
 @media only screen and (max-width: 1080px) {
