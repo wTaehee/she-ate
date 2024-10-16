@@ -1,7 +1,7 @@
-/* Hide title as you scroll */
+
 body {
     position: relative;
-    overflow-x: hidden;
+  
     background-color: #feddfb;
 }
 
