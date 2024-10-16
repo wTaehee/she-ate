@@ -77,25 +77,26 @@ body {
 
 .title {
     position: absolute; 
-    top: 10vh; /* Start from the top of the screen */
+    top: 4.5vh; /* Start from the top of the screen */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center adjustment */
     z-index: 30; /* Ensure it's above everything */
     text-align: center;
     font-family: "rafaella-shadow", sans-serif;
-font-weight: 700;
-    font-size: 15em;
+font-weight: 600;
+    font-size: 12em;
     line-height: 0.9; /* Adjust this value to reduce the space between lines */
     height: 100vh; /* Make the title cover the full height of the viewport */
     display: flex; /* Use flexbox for centering */
-    padding: 20px;
+    padding: 80px;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     background: -webkit-radial-gradient( white, #75f70b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     overflow: hidden; /* Hide any overflow */
-    filter: drop-shadow(0 6mm 4mm rgb(84, 83, 84));
+    filter: drop-shadow(0 6mm 4mm rgb(84, 83, 84)) ;
+  
 }
 
 
@@ -129,9 +130,6 @@ a:hover {
 /* Media query for mobile view */
 @media only screen and (max-width: 850px) {
 
-.title {
-    font-size: 10em;
-}
 
 .top-layer {
         height: 49vh; /* Cover top 47% of the screen */
@@ -168,7 +166,7 @@ a:hover {
 @media only screen and (max-width: 1080px) {
 .title {
     display: block; /* Change to block for paragraph form */
-    font-size: 6.5em; /* Adjust font size for smaller screens */
+    font-size: 5em; /* Adjust font size for smaller screens */
     line-height: 1.2; /* Set a comfortable line height for readability */
     height: auto; /* Allow height to adjust based on content */
     padding: 20px; /* Add some padding for aesthetics */
