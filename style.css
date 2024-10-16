@@ -168,7 +168,7 @@ a:hover {
 
 @media only screen and (max-width: 1080px) {
     .top-layer {
-        height: 40vh; 
+        height: 44vh; 
         top:-5%;
 }
 
@@ -189,7 +189,7 @@ a:hover {
 
 
     .top-layer {
-        top:-15%;
+        top:-10%;
         height: 45vh; 
             
     }
