@@ -163,10 +163,10 @@ a:hover {
 }
 
 .title {
-    top:-15%;
+    top:-13%;
     position: fixed;
-    font-size: 5.2em; /* Adjust font size for smaller screens */
-    line-height: .9; /* Set a comfortable line height for readability */
+    font-size: 5.3em; /* Adjust font size for smaller screens */
+    line-height: .89; /* Set a comfortable line height for readability */
   
     padding: 4.8%; /* Add some padding for aesthetics */
     
