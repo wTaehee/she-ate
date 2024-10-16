@@ -77,7 +77,7 @@ body {
 
 .title {
     position: absolute; 
-    top: -6%; /* Start from the top of the screen */
+    top: -12.5%; /* Start from the top of the screen */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center adjustment */
     z-index: 30; /* Ensure it's above everything */
@@ -154,43 +154,7 @@ a:hover {
 }
 
 
-/* Media query for mobile view */
-@media only screen and (max-width: 900px) {
 
-
-.top-layer {
-    top:-15%;
-    height: 45vh; 
-        
-}
-
-/* Mouth stays directly above the head and covers it */
-.mouth {
-    width:95%;
-    bottom: 45vh; /* Positioned slightly above table */
-    
-}
-.food {
-
-    max-width: 32%;
-
-}
-
-/* Head stays behind mouth but above the table */
-.head {
-    width:95%;
-    bottom: 45vh; /* Positioned just below mouth but still aligned */
-   
-}
-
-/* Table positioned at the bottom and responsive */
-.table {
-   
-    height: 45vh; /* Responsive height */
- 
-}
-
-}
 
 @media only screen and (max-width: 1080px) {
     .top-layer {
@@ -199,25 +163,75 @@ a:hover {
 }
 
 .title {
-    top: 0; 
+    top:-15%;
     position: fixed;
     font-size: 5.2em; /* Adjust font size for smaller screens */
     line-height: .9; /* Set a comfortable line height for readability */
-    height: auto; /* Allow height to adjust based on content */
+  
     padding: 4.8%; /* Add some padding for aesthetics */
     
 }
 
 }
 
+/* Media query for mobile view */
+@media only screen and (max-width: 900px) {
+
+
+    .top-layer {
+        top:-15%;
+        height: 45vh; 
+            
+    }
+    
+    /* Mouth stays directly above the head and covers it */
+    .mouth {
+        width:95%;
+        bottom: 45vh; /* Positioned slightly above table */
+        
+    }
+    .food {
+    
+        max-width: 32%;
+    
+    }
+    
+    /* Head stays behind mouth but above the table */
+    .head {
+        width:95%;
+        bottom: 45vh; /* Positioned just below mouth but still aligned */
+       
+    }
+    
+    /* Table positioned at the bottom and responsive */
+    .table {
+       
+        height: 45vh; /* Responsive height */
+     
+    }
+
+    .title {
+        top:0;
+        position: fixed;
+        font-size: 6em; /* Adjust font size for smaller screens */
+        line-height: .9; /* Set a comfortable line height for readability */
+      
+        padding: 5.5%; /* Add some padding for aesthetics */
+        
+    }
+    
+    }
+    
+    
+    
+
 @media only screen and (max-width: 380px) {
 
 .title {
-    top: -10vh; 
-    position: fixed;
+    top: 0; 
+    
     font-size: 4.5em; /* Adjust font size for smaller screens */
-    line-height: .9; /* Set a comfortable line height for readability */
-    height: auto; /* Allow height to adjust based on content */
+   
     padding: 4%; /* Add some padding for aesthetics */
     
 }
