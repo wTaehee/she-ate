@@ -120,6 +120,27 @@ font-weight: 525;
     display: block;
 }
 
+@keyframes jiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(1deg);
+    }
+}
+
+/* Apply the jiggle effect to the food images on hover */
+.food:hover {
+    animation: jiggle 0.5s ease-in-out infinite;
+    cursor: pointer; /* Change cursor on hover */
+}
+
 /* Hover effect */
 a:hover {
     cursor: grab;
@@ -133,7 +154,9 @@ a:hover {
 
 
 .top-layer {
-        height: 49vh; /* Cover top 47% of the screen */
+    top:-15%;
+    height: 45vh; 
+        
 }
 
 /* Mouth stays directly above the head and covers it */
@@ -165,13 +188,33 @@ a:hover {
 }
 
 @media only screen and (max-width: 1080px) {
+    .top-layer {
+        height: 40vh; 
+        top:-5%;
+}
+
 .title {
     top: 0; 
     position: fixed;
-    font-size: 6em; /* Adjust font size for smaller screens */
+    font-size: 5.2em; /* Adjust font size for smaller screens */
     line-height: .9; /* Set a comfortable line height for readability */
     height: auto; /* Allow height to adjust based on content */
-    padding: 80px; /* Add some padding for aesthetics */
+    padding: 4.8%; /* Add some padding for aesthetics */
     
 }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+.title {
+    top: 0; 
+    position: fixed;
+    font-size: 4.5em; /* Adjust font size for smaller screens */
+    line-height: .9; /* Set a comfortable line height for readability */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 4%; /* Add some padding for aesthetics */
+    
+}
+
 }
